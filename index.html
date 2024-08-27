@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="shortcut icon" href="assets/img/usco_logo.svg" type="image/x-icon">
+    <title>Electrónica Digital II | USCO 2024-2</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav__container">
+                <img class="nav__logo" src="assets/img/usco_logo.svg" alt="logo de USCO">
+
+                <a href="#menu" class="nav__menu">
+                    <img class="nav__icon" src="assets/img/menu.svg" alt="">
+                </a>
+
+                <a href="#" class="nav__menu nav__menu__second">
+                    <img class="nav__icon" src="assets/img/close.svg" alt="">
+                </a>
+
+                <ul class="dropdown" id="menu">
+                    
+                    <li class="dropdown__list">
+                        <a class="dropdown__link" href="#">
+                            Inicio
+                        </a>
+                    </li>
+
+                    <li class="dropdown__list">
+                        <a class="dropdown__link" href="#">
+                            Acerca de
+                            <img class="dropdown__arrow" src="assets/img/arrow_down.svg" alt="">
+                            <input type="checkbox" class="dropdown__check">
+                        </a>
+                        <div class="dropdown__content">
+                            <ul class="dropdown__sub">
+                                <li class="dropdown__li">
+                                    <a class="dropdown__anchor" href="#justificacion">Justificación</a>
+                                </li>
+                                <li class="dropdown__li">
+                                    <a class="dropdown__anchor" href="#competencias">Competencias</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="dropdown__list">
+                        <a class="dropdown__link" href="#">
+                            Contacto
+                            <img class="dropdown__arrow" src="assets/img/arrow_down.svg" alt="">
+                            <input type="checkbox" class="dropdown__check">
+                        </a>
+                        <div class="dropdown__content">
+                            <ul class="dropdown__sub">
+                                <li class="dropdown__li">
+                                    <a class="dropdown__anchor" href="mailto:julian.molina@usco.edu.co">julian.molina@usco.edu.co</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <button class="nav__darklight__button nav__toggleButton" onclick="toggleBackgroundColor()">
+                        <img id="toggleButtonIcon" src="assets/img/moon.svg" alt="dark mode toggle button">
+                    </button>
+                </ul>
+                <button class="nav__darklight__button1 nav__toggleButton" onclick="toggleBackgroundColor()">
+                    <img id="toggleButtonIcon" src="assets/img/moon.svg" alt="dark mode toggle button">
+                </button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="course-description">
+            <h1>Bienvenidos al curso <span>Electrónica Digital II</span></h1>
+                <p>El curso de <span style="font-weight: bold;"> Electrónica Digital II</span> se orienta al trabajo sobre técnicas, lenguajes, ambientes y estrategias de programación utilizadas en dispositivos digitales usados principalmente en soluciones basadas en sistemas embebidos con características de procesamiento independiente, tales como <span style=" font-weight: bold;"> FPGA`s</span> y microcontroladores.
+                </p>
+                <img src="assets/img/fpga.webp" alt="tarjeta FPGA" id="justificacion">
+        </section>
+
+        <section class="justification-description">
+            <span>JUSTIFICACIÓN</span>
+            <h2>Digitalización y Control Ágil para Procesos Complejos</h2>    
+            <div class="justification-header">
+                <p id="competencias">La fuerte tendencia hacia la digitalización de los sistemas electrónicos, el surgimiento de procesos cada vez más complejos que requieren un control y la necesidad de hacer que los procesos de diseño sean cada vez más ágiles, efectivos y eficientes, nos obligan a buscar sistemas y herramientas que faciliten estas labores y nos permitan dar soluciones rápidas y acertadas
+                </p>
+            </div>
+        </section>
+        <section class="competencies-header">
+            <span>COMPETENCIAS</span>
+            <h2>Competencias Clave en Ingeniería para Soluciones Éticas y Efectivas</h2>    
+            <div class="competencies-description">
+                <img src="assets/img/arduino_raspberry.webp" alt="">
+                
+                <ul class="competencies-list">
+                    <li>
+                        <span class="competencies-list-icon">✔</span>
+                        <div>
+                            <p>Capacidad de identificar, formular y resolver problemas complejos de ingeniería mediante la aplicación de principios de ingeniería, ciencias y matemáticas.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="competencies-list-icon">✔</span>
+                        <div>
+                            <p>Capacidad de aplicar el diseño de ingeniería para producir soluciones que satisfagan necesidades específicas considerando la salud pública, la seguridad y el bienestar, así como factores globales, culturales, sociales, ambientales y económicos.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="competencies-list-icon">✔</span>
+                        <div>
+                            <p>Capacidad para comunicarse de manera efectiva con una variedad de audiencias.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="competencies-list-icon">✔</span>
+                        <div>
+                            <p>Capacidad de reconocer responsabilidades éticas y profesionales en situaciones de ingeniería y emitir juicios informados, que deben considerar el impacto de las soluciones de ingeniería en contextos globales, económicos, ambientales y sociales.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="competencies-list-icon">✔</span>
+                        <div>
+                            <p>Capacidad para funcionar de manera efectiva en un equipo cuyos miembros juntos brindan liderazgo, crean un entorno colaborativo e inclusivo, establecen metas, planifican tareas y cumplen objetivos.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="competencies-list-icon">✔</span>
+                        <div>
+                            <p>Capacidad de desarrollar y realizar experimentos apropiados, analizar e interpretar datos y utilizar el juicio de ingeniería para sacar conclusiones.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="competencies-list-icon">✔</span>
+                        <div>
+                            <p>Capacidad de adquirir y aplicar nuevos conocimientos según sea necesario, utilizando estrategias de aprendizaje adecuadas.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="assets/js/main.js"></script>
+</html>
