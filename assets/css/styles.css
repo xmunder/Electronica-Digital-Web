@@ -418,7 +418,7 @@ body {
   .nav__menu__second {
     position: fixed;
     top: auto;
-    right: 65px;
+    left: 20px;
     transform: var(--img2);
   }
 
